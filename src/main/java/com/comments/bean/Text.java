@@ -52,7 +52,8 @@ public class Text {
 
     /**
      * 加载处理后的依存短句
-     * 
+     * 将分割后的句子转换为向量的形式
+     * 转换形式：1. 根据vectorMap中的对应词的向量相加求平均
      * @param rpath
      * @param vecPath
      * @return

@@ -150,6 +150,7 @@ public class Dbscan extends ClusteringAlgorithm {
      * @param vecLen
      */
     public void getNearestLabel(List<Cluster> clusters, int vecLen) {
+        //计算聚类的中心
         calCenterVecs(clusters, vecLen);
         for (Cluster cluster : clusters) {
             List<Text> texts = cluster.getInstances();

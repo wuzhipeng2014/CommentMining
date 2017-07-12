@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * 聚类主程序入口
- *
+ *good
  */
 public class DBScanTask {
 
@@ -29,6 +29,8 @@ public class DBScanTask {
      * @return，聚类结果
      */
     public static List<Cluster> dbCluster(List<Text> points, String outputPath, double clusterRadius, int minPts) {
+        //clusterRadius:　可以分为同一个类的向量之间的最大距离
+        //minPts: 一个类中包含的向量的最小个数
         Dbscan dbscan = new Dbscan(clusterRadius, minPts);
         List<Cluster> clusters = dbscan.cluster(points);
         int vecLen = clusters.get(0).getInstances().get(0).getTextVect().length;

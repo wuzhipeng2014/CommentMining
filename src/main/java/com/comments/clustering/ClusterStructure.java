@@ -37,6 +37,7 @@ public class ClusterStructure {
             if (neighbors.size() >= Dbscan.getMinPts()) {
                 Cluster cluster = new Cluster();
                 clusterLabel++;
+                // 扩展簇，将密度可达点加入簇中
                 cluster = expandCluster(nearNeighbors, cluster, instance, neighbors, points, visited, clusterLabel);
                 if (cluster.getInstances().size() >= Dbscan.getMinPts()) {
                     clusters.add(cluster);

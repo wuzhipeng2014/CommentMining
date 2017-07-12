@@ -47,6 +47,7 @@ public class NLPUtils {
         // segment(rpath, wpath,stopDictPath);
     }
 
+    //step1. 分词+句法分析
     public static void segment(String rpath, String wpath, String stopDictPath) {
         try {
             BufferedReader reader = new BufferedReader(
