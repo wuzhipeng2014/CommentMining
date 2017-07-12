@@ -1,1 +1,13 @@
 /bin/
+target/*
+
+
+将删除 .idea/compiler.xml
+将删除 .idea/copyright/
+将删除 .idea/misc.xml
+将删除 .idea/workspace.xml
+将删除 src/main/java/com/
+将删除 src/main/resources/
+将删除 src/test/
+将删除 target/
+.idea/*.xml
